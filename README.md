@@ -2,7 +2,7 @@
 
 
 ## Game board Design:
-For designing the game board, we have taken a two dimensional vector of integer. Human agent will put ‘1’ on the board and AI agent will put ‘2’ on the board. Later on, while representing, ‘1’ is converted to ‘O’ and ‘2’ is converted to ‘X’. We have considered standard board size in this game which is 6x7.
+For designing the game board, a two dimensional vector of integer is taken. Human agent will put ‘1’ on the board and AI agent will put ‘2’ on the board. Later on, while representing, ‘1’ is converted to ‘O’ and ‘2’ is converted to ‘X’. We have considered standard board size in this game which is 6x7.
 
 <table class="tg">
 <thead>
@@ -34,7 +34,7 @@ For designing the game board, we have taken a two dimensional vector of integer.
 fig: Representation of the Game Board
 
 ## Evaluation Function:
-For cutting the adversarial search after a certain level of the search tree, we have designed an evaluation function. For each move, AI agent will look for depth of five. Then after reaching that level, evaluation function will be called. We assigned value for each possible set of four elements of the board taken from horizontally, vertically and diagonally. By summing up values of all possible sets, we obtained an evaluation value for each state and by this way AI agent don’t need to go the terminal state to determine the utility value of a state.
+For cutting the adversarial search after a certain level of the search tree, an evaluation function is designed. For each move, AI agent will look for depth of five. Then after reaching that level, evaluation function will be called. We assigned value for each possible set of four elements of the board taken from horizontally, vertically and diagonally. By summing up values of all possible sets, we obtained an evaluation value for each state and by this way AI agent don’t need to go the terminal state to determine the utility value of a state.
 The criterion on which value is assigned to each of the set is attached below:
 
 <table class="tg">
